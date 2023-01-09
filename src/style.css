@@ -1,0 +1,56 @@
+/* Universal */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: rgb(93, 183, 222);
+    --secondary-color: rgb(163,155,139);
+    --tertiary-color: rgb(241,233,219);
+}
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+.employee-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 40px auto;
+    border: 3px solid gray;
+    box-shadow: 2px 4px #888888;
+    background-color: var(--primary-color);
+}
+
+.title{
+    display: flex;
+    margin:0px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.info div{
+    padding: 5px;
+    border: 1px solid black;
+}
