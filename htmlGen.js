@@ -1,5 +1,4 @@
-
-const htmlGen = team => {
+function htmlGen(team) {
     console.log("Hello", team)
     for (let i = 0; i < team.length; i++) {
         console.log(team[i].getRole());

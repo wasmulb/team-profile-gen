@@ -123,7 +123,7 @@ const internQuestions=[
         if (answers.askAgain) {
             ask();
         } else {
-            console.log(output)
+            // console.log(output)
         }
     });
   }
@@ -135,7 +135,7 @@ const internQuestions=[
         if (answers.askAgain) {
             ask();
         } else {
-            console.log(output)
+            // console.log(output)
         }
     });
   }
@@ -147,7 +147,7 @@ const internQuestions=[
         if (answers.askAgain) {
             ask();
         } else {
-            console.log(output)
+            // console.log(output)
         }
     });
   }
