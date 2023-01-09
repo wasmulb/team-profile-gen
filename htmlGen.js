@@ -1,9 +1,16 @@
 function htmlGen(team) {
+    console.log(team.length)
     console.log("Hello", team)
     for (let i = 0; i < team.length; i++) {
-        console.log(team[i].getRole());
+        // console.log(team[i].getRole());
         if (team[i].getRole() === "Manager") {
-            renderManager(team[i])
+            return(renderManager(team[i]));
+        }
+        else if(team[i].getRole() === "Engineer") {
+            return(renderEngineer(team[i]));
+        }
+        else if(team[i].getRole() === "Intern"){
+            return(renderIntern(team[i]));
         }
     }
 
@@ -22,6 +29,38 @@ function renderManager(manager) {
     <div>Email: ${manager.getEmail()}</div>
     <div>Office Number: ${manager.getOffice()}</div>
 </div>
+</section>`
+}
+
+function renderEngineer(engineer) {
+    return `<section class="employee-card">
+    <div class="title">
+        <ul>
+            <li>${engineer.getName()}</li>
+            <li>Engineer</li>
+        </ul>
+    </div>
+    <div class="info">
+        <div>ID:${engineer.getID()}</div>
+        <div>Email:${engineer.getEmail()}</div>
+        <div>GitHub:${engineer.getGitHub()}</div>
+    </div>
+</section>`
+}
+
+function renderIntern(intern) {
+    return `<section class="employee-card">
+    <div class="title">
+        <ul>
+            <li>${intern.getName()}</li>
+            <li>Intern</li>
+        </ul>
+    </div>
+    <div class="info">
+        <div>ID:${intern.getID()}</div>
+        <div>Email:${intern.getEmail()}</div>
+        <div>GitHub:${intern.getSchool()}</div>
+    </div>
 </section>`
 }
 
