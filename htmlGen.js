@@ -2,15 +2,14 @@ function htmlGen(team) {
     function renderManager(manager) {
       return `        <section class="employee-card">
         <div class="title">
-            <ul>
-                <li>${manager.getName()}</li>
-                <li>Mananger</li>
-            </ul>
+            <a>
+                ${manager.getName()} - ${manager.getRole()}
+            </a>
         </div>
         <div class="info">
-            <div>ID: ${manager.getID()}</div>
-            <div>Email: ${manager.getEmail()}</div>
-            <div>Office Number: ${manager.getOffice()}</div>
+            <a>ID: ${manager.getID()}</a>
+            <a href="mailto: ${manager.getEmail()}">Email: ${manager.getEmail()}</a>
+            <a>Office Number: ${manager.getOffice()}</a>
         </div>
         </section>`;
     }
@@ -18,15 +17,14 @@ function htmlGen(team) {
     function renderEngineer(engineer) {
       return `<section class="employee-card">
             <div class="title">
-                <ul>
-                    <li>${engineer.getName()}</li>
-                    <li>Engineer</li>
-                </ul>
+                <a>
+                    ${engineer.getName()} - ${engineer.getRole()}
+                </a>
             </div>
             <div class="info">
-                <div>ID:${engineer.getID()}</div>
-                <div>Email:${engineer.getEmail()}</div>
-                <div>GitHub:${engineer.getGitHub()}</div>
+                <a>ID:${engineer.getID()}</a>
+                <a href="mailto: ${engineer.getEmail()}">Email: ${engineer.getEmail()}</a>
+                <a target="_blank" href="https://github.com/${engineer.getGitHub()}">GitHub: ${engineer.getGitHub()}</a>
             </div>
         </section>`;
     }
@@ -34,20 +32,17 @@ function htmlGen(team) {
     function renderIntern(intern) {
       return `<section class="employee-card">
             <div class="title">
-                <ul>
-                    <li>${intern.getName()}</li>
-                    <li>Intern</li>
-                </ul>
+                <a>
+                    ${intern.getName()} - ${intern.getRole()}
+                </a>
             </div>
             <div class="info">
-                <div>ID:${intern.getID()}</div>
-                <div>Email:${intern.getEmail()}</div>
-                <div>GitHub:${intern.getSchool()}</div>
+                <a>ID: ${intern.getID()}</a>
+                <a href="mailto: ${intern.getEmail()}">Email: ${intern.getEmail()}</a>
+                <a>School: ${intern.getSchool()}</a>
             </div>
         </section>`;
     }
-    console.log(team.length);
-    console.log("Hello", team);
     const html = [];
     html.push(
       team
