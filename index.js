@@ -153,7 +153,7 @@ const internQuestions=[
   }
 
   function generate(){
-    fs.writeFileSync('index.html',htmlGen(output))
+    fs.writeFileSync('./dist/index.html',htmlGen(output))
   }
   
   ask();
