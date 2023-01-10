@@ -1,5 +1,7 @@
 # Team Profile Generator
 
+## Video Tutorial Link: https://drive.google.com/file/d/1EMrGTHntlTDrV28-pb_X9EW7FTLCx_QN/view
+
 ## Description
 
 For this assignment, I built a command-line application that allows an employer to create a team profile website with all of their employees. The user has the option to add one of the following employee types: manager, engineer, or intern. The web page that is created includes the employees' information (name, role, ID, email, office number (for managers), GitHub account (for engineers), and school (for interns)). The generated web page includes links for emails, as well as the GitHub repository. 
