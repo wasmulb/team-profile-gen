@@ -9,6 +9,7 @@ describe("Intern", () => {
             expect(manager.getID()).toEqual(4);
             expect(manager.getEmail()).toEqual("mikasa@email.com");
             expect(manager.getOffice()).toEqual(4);
+            expect(manager.getRole()).toEqual("Manager")
         });
     });
 });

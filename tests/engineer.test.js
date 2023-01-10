@@ -9,6 +9,7 @@ describe("Engineer", () => {
             expect(engineer.getID()).toEqual(2);
             expect(engineer.getEmail()).toEqual("johnny@email.com")
             expect(engineer.getGitHub()).toEqual("jdawgg")
+            expect(engineer.getRole()).toEqual("Engineer")
         });
     });
 });
