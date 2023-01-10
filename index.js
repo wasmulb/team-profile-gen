@@ -68,7 +68,7 @@ const engineerQuestions=[
     {
         type: 'confirm',
         name: 'askAgain',
-        message: 'Would you like to add another team member? (just hit enter for YES)',
+        message: `Press 'Enter' to return to the selection menu.`,
         default: true,
     },
 ];
@@ -97,7 +97,7 @@ const internQuestions=[
     {
         type: 'confirm',
         name: 'askAgain',
-        message: 'Would you like to add another team member? (just hit enter for YES)',
+        message: `Press 'Enter' to return to the selection menu.`,
         default: true,
     },
 ];
